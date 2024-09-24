@@ -12,7 +12,7 @@ The primary purpose of this analysis was to develop a deep learning model capabl
 - **Feature Variables**: The features used for the model include various attributes of the organizations and their applications, such as APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, and ASK_AMT.
 - **Variables Removed**: The variables EIN and NAME were removed from the input data as they are unique identifiers and organization names, respectively, and do not contribute meaningful information for predicting funding success.
 
-![preprocessing](Images/classification.png)
+![preprocessing](Images/preprocessing.png)
 
 ### Compiling, Training, and Evaluating the Model
 
