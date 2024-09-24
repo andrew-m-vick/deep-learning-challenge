@@ -12,6 +12,8 @@ The primary purpose of this analysis was to develop a deep learning model capabl
 - **Feature Variables**: The features used for the model include various attributes of the organizations and their applications, such as APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, and ASK_AMT.
 - **Variables Removed**: The variables EIN and NAME were removed from the input data as they are unique identifiers and organization names, respectively, and do not contribute meaningful information for predicting funding success.
 
+![preprocessing](Images/classification.png)
+
 ### Compiling, Training, and Evaluating the Model
 
 **Neural Network Architecture**: The initial model architecture consisted of:
@@ -21,6 +23,8 @@ The primary purpose of this analysis was to develop a deep learning model capabl
 - Binary cross-entropy loss function.
 - Adam optimizer.
 - Accuracy as the evaluation metric.
+
+![model](Images/define_model.png)
 
 This configuration was chosen as a starting point for its relative simplicity and common use in binary classification problems. ReLU activation was selected for its computational efficiency and ability to mitigate vanishing gradient issues.
 
@@ -37,6 +41,8 @@ This configuration was chosen as a starting point for its relative simplicity an
 ## Summary
 
 The deep learning model achieved a reasonable level of accuracy in predicting the success of funding applications. However, the target performance of 75% accuracy was not consistently met across the optimization attempts. The best-performing model achieved an accuracy of around 73%.
+
+![0.73](Images/optimization_0.73.png)
 
 ### Recommendation for a Different Model:
 
